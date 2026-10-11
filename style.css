@@ -28,3 +28,9 @@ body {
     color: var(--kui-text);
     font-family: system-ui, sans-serif;
 }
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
