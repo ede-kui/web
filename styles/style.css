@@ -507,8 +507,8 @@ h1 span {
         visibility: visible;
     }
     .nav-links-container {
-        /* opacity: 0;
-        visibility: hidden; */
+        opacity: 0;
+        visibility: hidden;
         background-color: transparent;
         position: fixed;
         top: 0px;
