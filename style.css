@@ -1,0 +1,6 @@
+    /* --nav-scroller-gradient-start: #1e162e; */
+    /* --nav-scroller-gradient-end: #000; */
+body {
+    /* background-image: linear-gradient(180deg, var(--nav-scroller-gradient-start) 50%, var(--nav-scroller-gradient-end) 50%); */
+    background-color: #17191D;
+}
