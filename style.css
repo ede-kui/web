@@ -139,7 +139,7 @@ h1 span { color: var(--blue); }
 .code-content { padding: 19px 22px 7px; overflow-x: auto; }
 .code-line { display: grid; grid-template-columns: 40px max-content; gap: 8px; min-height: 27px; font: 15px/1.8 "Cascadia Code", Consolas, "SFMono-Regular", monospace; white-space: pre; }
 .line-number { color: #526b84; text-align: center; user-select: none; }
-.code-line code { color: var(--code-text); }
+.code-line { color: var(--code-text); }
 .syntax-keyword { color: #64d9f6; }
 .syntax-function { color: #08b9ff; }
 .syntax-string { color: #43d9c0; }
