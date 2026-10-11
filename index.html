@@ -1,44 +1,139 @@
-<html>
-    <head>
-        <title>Kui website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <div id="info">
-                <img src="assets/logo.png" alt="Logo" id="logo">
-                <h5 id="site-name">Kúì</h5>
-            </div>
-            <ul id="nav">
-                <li class="nav-button">Docs</li>
-                <li class="nav-button">GitHub</li>
-                <li class="nav-button">Playground</li>
-                <li class="nav-button" id="nav-split"></li>
-                <li class="nav-button">Download</li>
-                <li class="nav-button"></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1119">
+  <meta name="description" content="Kúì is a modern systems programming language designed for performance, safety, and simplicity.">
+  <title>Kúì programming language</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand">
+        <img src="./assets/kui_logo.png" alt="" class="brand-logo">
+        <span>Kúì</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Learn</a>
+        <a href="#docs">Docs</a>
+		<a href="">Playground</a>
+        <a href="https://github.com/ede-kui" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button button-small" href="#get-started">Install</a>
+		<div class="translation-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg"
+				class="trans-svg"
+                width="24" height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+              <path d="M4 5h12M10 3v2"/>
+              <path d="M14 5c-1 5-4 8-9 10"/>
+              <path d="M6 9c2 3 5 5 8 6"/>
+              <path d="m13 21 4.5-12 4.5 12"/>
+              <path d="M14.5 17h6"/>
+            </svg>
+			<div class="supported-languages">
+				<a class="translate-to" href="">English</a>
+				<a class="translate-to" href="">Yoruba</a>
+			</div>
+		</div>
+		
+	</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- <div class="hero-mark" aria-hidden="true"> -->
+      <img src="./assets/kui_logo.png" alt="" class="hero-mark">
+        <!-- <span class="hero-mark-inner"></span> -->
+      <!-- </div> -->
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A LANGUAGE FOR SYSTEMS PROGRAMMING</p>
+          <h1>Confort and<br><span>Understanding.</span></h1>
+          <p class="hero-description">
+            Kúì is a Yoruba inspired modern systems programming language designed for performance,
+            safety, and simplicity. Built with a focus on control, it gives you the
+            power to write efficient, reliable software — from low-level systems to
+            high-level applications.
+          </p>
+          <div class="hero-actions" id="get-started">
+            <a class="button" href="#docs">Get started <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#features">Explore the language</a>
+          </div>
         </div>
-        <div id="intro">
-            <div id="intro-text">
-                <p id="intro-lang-type">A LANGUAGE FOR SYSTEMS PROGRAMMING</p>
-                <h2>Understand your machine. Write and Read with confort</h2>
-                <p id="intro-desc">
-                    Kúì is a programming language designed to be simple, fast and safe. It is a statically typed language that uses Yoruba language inspired keywords and compiles to native code, making it ideal for systems programming.
-                </p>
-                <button id="get-started-btn">Get Started</button>
-                <button id="playground-btn">Playground</button>
-            </div>
-            <div id="intro-code">
-                <div id="intro-code-top">
-                    <ul id="intro-code-mac-nav">
-                        <li class="intro-code-mac-nav-button" id="intro-code-mac-nav-close"></li>
-                        <li class="intro-code-mac-nav-button" id="intro-code-mac-nav-expand"></li>
-                        <li class="intro-code-mac-nav-button" id="intro-code-mac-nav-minimize"></li>
-                    </ul>
-                    <em id="intro-code-file">hello.kui</em>
-                </div>
-            </div>
+
+        <div class="code-window" aria-label="Example Kúì code">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="filename">hello.kui</span>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="line-number">1</span><code><span class="syntax-keyword">gbòógì</span> {</code></div>
+            <div class="code-line"><span class="line-number">2</span><code>    <span class="syntax-function">kọ</span>(<span class="syntax-string">"Ẹ káàbọ̀ sí Kúì!"</span>)</code></div>
+            <div class="code-line"><span class="line-number">3</span><code>}</code></div>
+            <div class="code-line blank"><span class="line-number">4</span><code></code></div>
+            <div class="code-line"><span class="line-number">5</span><code><span class="syntax-keyword">fun</span> <span class="syntax-function">main</span>() {</code></div>
+            <div class="code-line"><span class="line-number">6</span><code>    <span class="syntax-function">kọ</span>(<span class="syntax-string">"Kúì is fast, safe and simple."</span>)</code></div>
+            <div class="code-line"><span class="line-number">7</span><code>}</code></div>
+            <div class="code-line blank"><span class="line-number">8</span><code></code></div>
+          </div>
+          <div class="code-caption">A small example of Kúì syntax</div>
         </div>
-        
-    </body>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="heading-mark" aria-hidden="true"></span>
+          <h2>Designed for control.</h2>
+          <p>Everything you need to build fast, reliable, and maintainable<br class="desktop-break">
+            software — without giving up control.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="13" y="13" width="22" height="22" rx="3"/><path d="M19 19h10v10H19zM18 7v6m6-6v6m6-6v6M18 35v6m6-6v6m6-6v6M7 18h6m-6 6h6m-6 6h6m22-12h6m-6 6h6m-6 6h6"/></svg>
+            </div>
+            <div><h3>Systems programming</h3><p>Get low-level control with a modern, productive language and native compilation.</p></div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 7 38 13v10c0 9-6 15-14 19C16 38 10 32 10 23V13z"/></svg>
+            </div>
+            <div><h3>Ownership</h3><p>Benefit from move semantics and a powerful borrow checker for memory safety.</p></div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 11h32v26H8zM15 20l5 4-5 4m10 1h8"/></svg>
+            </div>
+            <div><h3>Developer tools</h3><p>Enjoy a fast compiler, helpful error messages, and smooth editor integration.</p></div>
+          </article>
+
+          <article class="feature-card" id="docs">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M7 10h11c4 0 6 2 6 6v23c0-4-2-6-6-6H7zM41 10H30c-4 0-6 2-6 6v23c0-4 2-6 6-6h11z"/></svg>
+            </div>
+            <div><h3>Documentation</h3><p>From getting started to advanced topics, clear and comprehensive guides help you at every step.</p></div>
+          </article>
+        </div>
+
+        <footer class="site-footer">
+          <span></span><p>Built for developers. Inspired by possibility.</p><span></span>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
