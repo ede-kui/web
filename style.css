@@ -31,6 +31,7 @@ a { color: inherit; text-decoration: none; }
 .brand { display: inline-flex; align-items: center; gap: 13px; font-size: 34px; font-weight: 750; letter-spacing: -1.4px; }
 .brand-logo { display: block; width: 47px; height: 47px; object-fit: contain; }
 .nav-links {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 32px;
@@ -39,8 +40,8 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-links > a:not(.button) { transition: color 160ms ease; }
 .nav-links > a:not(.button):hover { color: var(--blue); }
-.nav-links > .translation-icon .trans-svg:not(.button) { transition: color 160ms ease; }
-.nav-links > .translation-icon .trans-svg:not(.button):hover { color: var(--blue); }
+.nav-links > .translation .trans-svg:not(.button) { transition: color 160ms ease; }
+.nav-links > .translation .trans-svg:not(.button):hover { color: var(--blue); }
 
 .button {
   	display: inline-flex; align-items: center; justify-content: center; gap: 10px;
@@ -54,15 +55,42 @@ a { color: inherit; text-decoration: none; }
 .button-outline { background: transparent; box-shadow: none; }
 .button-outline:hover { background: rgba(7,154,240,.09); }
 
-.translation-icon {
+.translation {
 	position: relative;
+	cursor: pointer;
 }
 
 .supported-languages {
-	position: fixed;
-	display: flex;
-	flex-direction: column;
+    position: absolute;
+    top: 25px;
+	left: 4px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+	gap: 10px;
+
+	background: rgba(7, 154, 240, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 160ms ease, visibility 160ms ease;
 }
+
+.translation:hover .supported-languages {
+    opacity: 1;
+    visibility: visible;
+}
+
+.supported-languages > a:not(.button) { transition: color 160ms ease; }
+.supported-languages > a:not(.button):hover { color: var(--blue); }
 
 .hero {
   	position: relative; isolation: isolate; overflow: hidden;
@@ -115,6 +143,8 @@ h1 span { color: var(--blue); }
 .syntax-keyword { color: #64d9f6; }
 .syntax-function { color: #08b9ff; }
 .syntax-string { color: #43d9c0; }
+.syntax-type { color: #B8860B; }
+.syntax-ident { color: var(--muted); }
 .code-caption { margin: 12px 22px 0; padding: 17px 0 14px; border-top: 1px solid rgba(67,105,137,.42); }
 
 .features-section { padding: 50px 0 27px; background: linear-gradient(180deg,#0b1119,#0a121b); }
