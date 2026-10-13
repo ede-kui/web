@@ -175,6 +175,7 @@ a {
 .menu-toggle {
     opacity: 0;
     visibility: hidden;
+    position: absolute;
     width: 42px;
     height: 42px;
     padding: 10px;
