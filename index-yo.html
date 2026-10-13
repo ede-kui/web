@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1119">
+    <meta name="description" content="Ọ̀pẹ is a modern systems programming language designed for performance, safety, and simplicity.">
+    <title>Ọ̀pẹ programming language</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="brand">
+                <img src="./assets/ope_logo.png" alt="" class="brand-logo">
+                <span>Ọ̀pẹ</span>
+            </a>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <a href="#features">Ẹ̀kọ́</a>
+                    <a href="#docs">Àkọsíẹ̀</a>
+                    <a href="">Ibi-ìṣeré</a>
+                    <a href="https://github.com/ede-ope" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="button button-small" href="#get-started">Fi sori ẹrọ</a>
+                    <div class="translation" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="trans-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M4 5h12M10 3v2"/>
+                          <path d="M14 5c-1 5-4 8-9 10"/>
+                          <path d="M6 9c2 3 5 5 8 6"/>
+                          <path d="m13 21 4.5-12 4.5 12"/>
+                          <path d="M14.5 17h6"/>
+                        </svg>
+                        <div class="supported-languages">
+                            <a class="translate-to" href="./index.html">English</a>
+                            <a class="translate-to" href="">Yoruba</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- <div class="hero-mark" aria-hidden="true"> -->
+            <img src="./assets/ope_logo.png" alt="" class="hero-mark">
+            <!-- <span class="hero-mark-inner"></span> -->
+            <!-- </div> -->
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">ÈDÈ FÚN ÌṢÈTÒ ÀWỌN ÀKÀNSO</p>
+                    <h1>Ìdẹ̀rù àti<br><span>Òye.</span></h1>
+                    <p class="hero-description">
+                        Ọ̀pẹ jẹ́ èdè ìṣètò àwọn àkànso ìgbàlódé tí a mú jàde láti inú èdè Yorùbá tí a sì dálárà ààbò, ìṣiṣẹ́ tayọ, àti ìrọ̀rù. A ṣe é pẹ̀lú àfojúsùn lórí ìkáwọ́ àti àkóso, oó fún ọ ní agbára láti lè kọ abo-èlò tí oó múnádóko tí oó sì ṣe é gbẹ́kẹ̀lé — láti àwọn
+                        àkàso ìpele-bíńtín sí àwọn àmúlò ìpele-gíga.
+                    </p>
+                    <div class="hero-actions" id="get-started">
+                        <a class="button" href="#docs">Bẹ̀rẹ̀ <span aria-hidden="true">→</span></a>
+                        <a class="button button-outline" href="#features">Ṣàwárí èdè ọ̀wún wò</a>
+                    </div>
+                </div>
+
+                <div class="code-window" aria-label="Example Ọ̀pẹ code">
+                    <div class="window-bar">
+                        <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                        <span class="filename">hello-world.ope</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="line-number">1</span><code><span class="syntax-keyword">lo</span> <span class="syntax-ident">pl</span></code></div>
+                        <div class="code-line"><span class="line-number">2</span><code><span class="syntax-keyword">mu</span> <span class="syntax-ident">pl</span>/<span class="syntax-ident">kọ_l</span></code></div>
+                        <div class="code-line blank"><span class="line-number">3</span><code></code></div>
+                        <div class="code-line"><span class="line-number">4</span><code><span class="syntax-keyword">iṣẹ́</span> <span class="syntax-type">òfìfo</span> <span class="syntax-function">gbòógì</span>(): {</code></div>
+                        <div class="code-line"><span class="line-number">5</span><code>    <span class="syntax-keyword">kí</span> <span class="syntax-type">ọsán</span> <span class="syntax-ident">ìkíni</span>: <span class="syntax-string">"Ẹ ǹlẹ́ o lágbáyé"</span></code></div>
+                        <div class="code-line"><span class="line-number">6</span><code>    ~ <span class="syntax-function">kọ_l</span>(<span class="syntax-ident">ìkíni</span>)</code></div>
+                        <div class="code-line"><span class="line-number">7</span><code>}</code></div>
+                        <div class="code-line blank"><span class="line-number">8</span><code></code></div>
+                    </div>
+                    <div class="code-caption">Àpẹrẹ ìlànà-àkọsílẹ̀ Ọ̀pẹ kékeré kan</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="heading-mark" aria-hidden="true"></span>
+                    <h2>Dálárà fún ìkáwọ́.</h2>
+                    <p>Gbogbo ǹkan tí o nílò láti fi ṣe abo-èlò tí oó yára, se é gbẹ́kẹ̀lé àti ṣe é mójúto<br class="desktop-break">— láì-ní láti pàdánù ìkáwọ́ ẹ̀rọ rẹ.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48"><rect x="13" y="13" width="22" height="22" rx="3"/><path d="M19 19h10v10H19zM18 7v6m6-6v6m6-6v6M18 35v6m6-6v6m6-6v6M7 18h6m-6 6h6m-6 6h6m22-12h6m-6 6h6m-6 6h6"/></svg>
+                        </div>
+                        <div>
+                            <h3>Ìṣètò àwọn àkànso</h3>
+                            <p>Ní ìkáwọ́ ìpele-bíńtín pẹ̀lú èdè ìgbàlódé tí oó lè ṣe ọ̀pọ iṣẹ́ tí oó sì tún lè ṣe àkójọpọ̀-ètò ọlọ́danni.</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48"><path d="M24 7 38 13v10c0 9-6 15-14 19C16 38 10 32 10 23V13z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Ini-ohun</h3>
+                            <p>Jàǹfàní lára ìlànà-èdè ìsún àti aṣàyẹ̀wò ìyálò fún ààbò ìrántí-ẹ̀rọ.</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48"><path d="M8 11h32v26H8zM15 20l5 4-5 4m10 1h8"/></svg>
+                        </div>
+                        <div>
+                            <h3>Àwọn èlò Developer</h3>
+                            <p>Jẹ̀gbádùn òǹkójọpọ̀ tí oó yára, àwọn àrokò error tí yóò ràn-ọ́ lọ́wọ́, àti smooth editor integration.</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card" id="docs">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48"><path d="M7 10h11c4 0 6 2 6 6v23c0-4-2-6-6-6H7zM41 10H30c-4 0-6 2-6 6v23c0-4 2-6 6-6h11z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Documentation</h3>
+                            <p>From getting started to advanced topics, clear and comprehensive guides help you at every step.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <footer class="site-footer">
+                    <span></span>
+                    <p>
+                        Copyright &copy; 2026 Paul Olufemi. Licensed under the
+                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
+            			Apache License 2.0
+        			</a>.
+                    </p>
+                    <span></span>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
