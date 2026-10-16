@@ -490,6 +490,10 @@ h1 span {
         cursor: pointer;
         z-index: 200;
     }
+    .menu-toggle.active {
+        position: fixed;
+        right: 20px;
+    }
     /* Top line becomes the upper half of × */
     .menu-toggle.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
